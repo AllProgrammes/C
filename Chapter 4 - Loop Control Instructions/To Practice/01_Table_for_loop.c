@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main()
 {
-    int n, i;
+    int i = 1;
+    int number;
     printf("Enter the number : ");
-    scanf("%d", &n);
+    scanf("%d", &number);
     for (i = 1; i <= 10; i++)
     {
-        printf("%d x %d = %d\n", n, i, n * i);
+        printf("%d x %d = %d\n", number, i, number * i);
     }
-
     return 0;
 }
