@@ -1,6 +1,76 @@
 #include <stdio.h>
 #include <stdlib.h> //added library to nuke warning
 #include <time.h>   //added library to nuke warning
+void welcome()
+{
+    for (int i = 0; i < 43; i++)
+    {
+        printf(" ");
+    }
+    for (int i = 0; i < 43; i++)
+    {
+        printf("x");
+    }
+    printf("\n");
+    for (int i = 0; i < 3; i++)
+    {
+        for (int space = 0; space < 43; space++)
+        {
+            printf(" ");
+        }
+        for (int x = 0; x < 1; x++)
+        {
+            printf("x");
+        }
+        if (i == 1)
+        {
+            printf("\tTHIS IS A GUESS THE NUMBER GAME");
+        }
+        if (i == 1)
+        {
+            for (int space = 0; space < 6; space++)
+            {
+                printf(" ");
+            }
+        }
+        else
+        {
+            for (int space = 0; space < 41; space++)
+            {
+                printf(" ");
+            }
+        }
+
+        for (int x = 0; x < 1; x++)
+        {
+            printf("x");
+        }
+        printf("\n");
+    }
+    for (int i = 0; i < 43; i++)
+    {
+        printf(" ");
+    }
+    for (int i = 0; i < 43; i++)
+    {
+        printf("x");
+    }
+}
+void result(int score, char computer, char human)
+{
+    if (score == 1)
+    {
+        printf("You Won !\nComputer took '%c' and you choose '%c'", computer, human);
+    }
+    else if (score == -1)
+    {
+        printf("You Lost !\nComputer took '%c' and you choose '%c'", computer, human);
+    }
+    else
+    {
+        printf("Match Draw !\nComputer took '%c' and you choose '%c'", computer, human);
+    }
+}
 int main()
 {
     int number, attempt = 1;
@@ -10,8 +80,8 @@ int main()
     // similarly we can  make this game of 2 digit also by dividing by 10
     // I have done +1 because we can get a number 0 also , so to avoid that number we have done +1 so that it will start from 1 and end to 100
     int answer;
-    printf("\n\n\t\tTHIS IS A GUESS THE NUMBER GAME\n\n");
-    printf("The number is between 1 to 10\n");
+    welcome();
+    printf("\nThe number is between 1 to 10\n");
     do
     {
         printf("\nWhat's the number ? Enter below\n");
