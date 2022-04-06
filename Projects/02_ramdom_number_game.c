@@ -56,21 +56,6 @@ void welcome()
         printf("x");
     }
 }
-void result(int score, char computer, char human)
-{
-    if (score == 1)
-    {
-        printf("You Won !\nComputer took '%c' and you choose '%c'", computer, human);
-    }
-    else if (score == -1)
-    {
-        printf("You Lost !\nComputer took '%c' and you choose '%c'", computer, human);
-    }
-    else
-    {
-        printf("Match Draw !\nComputer took '%c' and you choose '%c'", computer, human);
-    }
-}
 int main()
 {
     int number, attempt = 1;
@@ -88,7 +73,7 @@ int main()
         scanf("%d", &answer);
         if (answer < number)
         {
-            if (attempt == 5)
+            if (attempt == 3)
             {
                 printf("\nYOU LOST !!");
             }
@@ -97,7 +82,7 @@ int main()
         }
         else if (answer > number)
         {
-            if (attempt == 5)
+            if (attempt == 3)
             {
                 printf("\nYOU LOST !!");
             }
@@ -118,7 +103,7 @@ int main()
             }
         }
         attempt++;
-    } while (attempt <= 5);
+    } while (attempt <= 3);
     // You can enter condition like while (attempt<= 10) to give 10 attempts
     return 0;
 }
