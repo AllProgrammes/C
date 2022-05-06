@@ -75,7 +75,8 @@ int main()
         {
             if (attempt == 3)
             {
-                printf("\nYOU LOST !!");
+                printf("\nYOU LOST !!\nComputer Chooose %d", number);
+                exit(0);
             }
             else
                 printf("Hint ! The number is more than what you have entered");
@@ -84,7 +85,8 @@ int main()
         {
             if (attempt == 3)
             {
-                printf("\nYOU LOST !!");
+                printf("\nYOU LOST !!\nComputer Chooose %d", number);
+                exit(0);
             }
             else
                 printf("Hint ! The number is less than what you have entered");
@@ -93,13 +95,13 @@ int main()
         {
             if (attempt == 1)
             {
-                printf("Are you from ILLUMINATI ?");
-                break;
+                printf("Are you from ILLUMINATI ? You have guessed it in first attempt");
+                exit(0);
             }
             else
             {
                 printf("You have guessed it in %d attempts ", attempt);
-                break;
+                exit(0);
             }
         }
         attempt++;
