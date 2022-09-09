@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main()
 {
-    for (int i = 1; i <= 3; i++)
+    for (int row = 1; row <= 3; row++)
     {
-        for (int c = 1; c <= ((i * 2) - 1); c++)
+        for (int column = 1; column <= (row * 2) - 1; column++)
         {
-            printf("x ");
+            printf("* ");
         }
         printf("\n");
     }
