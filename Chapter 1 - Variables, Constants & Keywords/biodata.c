@@ -17,7 +17,7 @@ int main()
   while (strlen(phone_number) > 11)
   {
     printf("Please enter correct phone number !!\n");
-    scanf("%s", &phone_number);
+    gets(phone_number);
   }
   printf("Enter your address : ");
   gets(address);
