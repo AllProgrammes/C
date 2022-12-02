@@ -1,0 +1,7 @@
+1. C program to add two numbers 
+2. C Program to Perform all arithmetic operations  
+3. C Program to find area of a circle  
+4. C Program to find simple interest  
+5. C Program to Find Compound Interest  
+6. C Program to Convert fahrenheit to celsius Temperature
+7. C Program to find Area and Perimeter of Square and Rectangle  
