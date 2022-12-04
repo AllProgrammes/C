@@ -1,7 +1,16 @@
-1. C program to add two numbers 
-2. C Program to Perform all arithmetic operations  
-3. C Program to find area of a circle  
-4. C Program to find simple interest  
-5. C Program to Find Compound Interest  
-6. C Program to Convert fahrenheit to celsius Temperature
-7. C Program to find Area and Perimeter of Square and Rectangle  
+//Operators
+
+1. Add two numbers 
+2. Perform all arithmetic operations  
+3. Find area of a circle  
+4. Find simple interest  
+5. Check whether 2 variables are equal or not
+6. Convert fahrenheit to celsius Temperature
+7. Find Area and Perimeter of Square and Rectangle  
+
+//Looping + Condtional
+
+1. Display only odd number in a range of 1 to 50
+2. Find Compound Interest
+3. Print table of 2 between 1 to 10
+4. Print only those numbers in a range of 1 to 50 which are completely divisible by 9
