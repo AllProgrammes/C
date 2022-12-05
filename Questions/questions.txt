@@ -14,3 +14,7 @@
 2. Find Compound Interest
 3. Print table of 2 between 1 to 10
 4. Print only those numbers in a range of 1 to 50 which are completely divisible by 9
+5. Display ther cube of number upto given input
+6. Check for negative or positive
+7. Largest among 3
+8. Read Temperature and display message accordingly 
