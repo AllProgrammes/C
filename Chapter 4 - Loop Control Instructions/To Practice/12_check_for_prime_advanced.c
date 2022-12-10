@@ -12,23 +12,24 @@ int main(void)
   // Taking input
   printf("Enter the number : ");
   scanf("%d", &number);
-  if (number < 2)
-  {
-    if (number == 1 || number == 0)
-    {
-      printf("0 & 1 is neither Prime nor Composite.");
-      exit(0);
-    }
-    else
-    {
-      printf("Prime numbers are always positive.");
-      exit(0);
-    }
-  }
-  for (int i = 2; i < (number / 2); i++)
+
+  for (int i = 2; i <= (number / 2); i++)
   {
     if (number % i == 0)
     {
+      if (number < 2)
+      {
+        if (number == 1 || number == 0)
+        {
+          printf("0 & 1 is neither Prime nor Composite.");
+          exit(0);
+        }
+        else
+        {
+          printf("Prime numbers are always positive.");
+          exit(0);
+        }
+      }
       printf("Not Prime !!");
 
       // Processing Time
@@ -39,7 +40,6 @@ int main(void)
     }
   }
   printf("Prime !!");
-
   // Processing Time
   end_time = clock();
   total_time = (double)(end_time - start_time) / CLOCKS_PER_SEC;
