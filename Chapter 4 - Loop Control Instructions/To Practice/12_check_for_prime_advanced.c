@@ -12,31 +12,29 @@ long long main(void)
   // Taking input
   printf("Enter the number : ");
   scanf("%lld", &number);
-
-  for (long long int i = 2; i <= (number / 2); i++)
+  if (number == 1 || number == 0)
   {
-    if (number % i == 0)
+    printf("0 & 1 is neither Prime nor Composite.");
+    exit(0);
+  }
+  else if (number < 0)
+  {
+    printf("Prime numbers are always positive.");
+    exit(0);
+  }
+  else
+  {
+    for (long long int i = 2; i <= (number / 2); i++)
     {
-      if (number < 2)
+      if (number % i == 0)
       {
-        if (number == 1 || number == 0)
-        {
-          printf("0 & 1 is neither Prime nor Composite.");
-          exit(0);
-        }
-        else
-        {
-          printf("Prime numbers are always positive.");
-          exit(0);
-        }
+        printf("Not Prime !!");
+        // Processing Time
+        end_time = clock();
+        total_time = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+        printf("\nTime taken by the CPU -> %lf seconds", total_time);
+        exit(0);
       }
-      printf("Not Prime !!");
-
-      // Processing Time
-      end_time = clock();
-      total_time = (double)(end_time - start_time) / CLOCKS_PER_SEC;
-      printf("\nTime taken by the CPU -> %lf seconds", total_time);
-      exit(0);
     }
   }
   printf("Prime !!");
