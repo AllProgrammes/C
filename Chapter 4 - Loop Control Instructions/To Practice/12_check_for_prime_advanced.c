@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-int main(void)
+long long main(void)
 {
   clock_t start_time = clock(), end_time; // Taking start clock time
 
   // Defining variables
   double total_time;
-  int number;
+  long long int number;
 
   // Taking input
   printf("Enter the number : ");
-  scanf("%d", &number);
+  scanf("%lld", &number);
 
-  for (int i = 2; i <= (number / 2); i++)
+  for (long long int i = 2; i <= (number / 2); i++)
   {
     if (number % i == 0)
     {
