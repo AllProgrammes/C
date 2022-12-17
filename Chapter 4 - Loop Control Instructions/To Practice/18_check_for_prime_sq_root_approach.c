@@ -12,7 +12,7 @@ int main()
     printf("0 & 1 is neither Prime nor Composite.");
     exit(0);
   }
-  else if (sq_root - (number * number) == 0)
+  else if (sq_root - (number / sq_root) == 0)
   {
     printf("Not Prime");
     exit(0);
