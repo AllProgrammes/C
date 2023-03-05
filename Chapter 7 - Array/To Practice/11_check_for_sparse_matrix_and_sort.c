@@ -48,10 +48,9 @@ int main()
         }
       }
     }
-    for (int i = 0; i < 3; i++)
-    {
-      sorted_matrix[non_zero_element][i] = non_zero_element; // storing the non-zero element count
-    }
+    sorted_matrix[non_zero_element][0] = row;              // storing the row of the sparse matrix
+    sorted_matrix[non_zero_element][1] = col;              // storing the col of the sparse matrix
+    sorted_matrix[non_zero_element][2] = non_zero_element; // storing the non-zero element count
 
     // printing out the sorted array
     printf("\nTriplet Repesentation :-\n");
